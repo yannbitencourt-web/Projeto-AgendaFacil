@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgendaFácil - Confirmação</title>
+
+    <link rel="stylesheet" href="../css/confirmação.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <a href="../index.html" class="logo">
+            <span class="logo-icon">A</span>
+            <span>Agenda<span class="logo-facil">Fácil</span></span>
+        </a>
+    </header>
+
+    <main class="pagina">
+
+        <section class="card">
+
+            <div class="icone">✓</div>
+
+            <span class="titulo-pequeno">AGENDAMENTO</span>
+
+            <h1>Confirme seu agendamento</h1>
+
+            <p class="descricao">
+                Confira as informações abaixo antes de confirmar seu agendamento.
+            </p>
+
+            <div class="informacoes">
+
+                <div class="informacao">
+                    <span>Serviço</span>
+                    <strong id="servico">Consulta</strong>
+                </div>
+
+                <div class="informacao">
+                    <span>Profissional</span>
+                    <strong id="profissional">Profissional selecionado</strong>
+                </div>
+
+                <div class="duas-colunas">
+
+                    <div class="informacao">
+                        <span>Data</span>
+                        <strong id="data">00/00/0000</strong>
+                    </div>
+
+                    <div class="informacao">
+                        <span>Horário</span>
+                        <strong id="horario">00:00</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="aviso">
+                <strong>As informações estão corretas?</strong>
+
+                <p>
+                    Você pode voltar e alterar alguma informação antes de confirmar.
+                </p>
+            </div>
+
+            <div class="botoes">
+
+                <button id="alterarBtn" class="btn btn-alterar">
+                    Alterar informações
+                </button>
+
+                <button id="confirmarBtn" class="btn btn-confirmar">
+                    Confirmar agendamento
+                </button>
+
+            </div>
+
+            <p id="mensagem" class="mensagem"></p>
+
+        </section>
+
+    </main>
+
+    <script src="../js/confirmação.js"></script>
+
+</body>
+</html>

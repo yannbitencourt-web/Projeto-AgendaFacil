@@ -10,9 +10,13 @@ formulario.addEventListener("submit", function(event) {
         return;
     }
 
+    if (horario.value === "") {
+        alert("Escolha um horário!");
+        return;
+    }
+
     localStorage.setItem("dataEscolhida", data.value);
     localStorage.setItem("horarioEscolhido", horario.value);
 
-  
-    window.location.href = "confirmacao.html";
+window.location.href = "confirmação.html";
 });

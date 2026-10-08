@@ -1,23 +1,39 @@
 (() => {
-  const form = document.querySelector('#bookingForm');
-  const error = document.querySelector('#bookingError');
+    const form = document.querySelector('#bookingForm');
+    const error = document.querySelector('#bookingError');
 
-  // Configure aqui o endereço da próxima página quando ela estiver disponível, irvin seu boçal
-  const PROXIMA_PAGINA = ''; // Exemplo: '../pages/pncirvinfazlogoissoai.html'
+    const PROXIMA_PAGINA = '../pages/data.html';
 
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const selectedService = form.querySelector('input[name="service"]:checked');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
 
-    if (!selectedService) {
-      error.hidden = false;
-      form.querySelector('input[name="service"]').focus();
-      return;
-    }
+        const selectedService = form.querySelector(
+            'input[name="service"]:checked'
+        );
 
-    error.hidden = true;
-    if (PROXIMA_PAGINA) {
-      window.location.href = PROXIMA_PAGINA;
-    }
-  });
+        if (!selectedService) {
+            error.hidden = false;
+
+            const primeiroServico = form.querySelector(
+                'input[name="service"]'
+            );
+
+            if (primeiroServico) {
+                primeiroServico.focus();
+            }
+
+            return;
+        }
+
+        error.hidden = true;
+
+   
+        localStorage.setItem(
+            'servico',
+            selectedService.value
+        );
+
+       
+        window.location.href = PROXIMA_PAGINA;
+    });
 })();
