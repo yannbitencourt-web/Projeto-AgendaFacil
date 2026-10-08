@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
         confirmarBtn.style.opacity = "0.7";
         confirmarBtn.style.cursor = "default";
 
+        window.location.href = "resultado.html";
+
     });
 
 });

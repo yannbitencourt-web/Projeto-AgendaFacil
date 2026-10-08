@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#155eef">
+    <title>AgendaFácil — Agendamento confirmado</title>
+    <link rel="stylesheet" href="../css/resultado.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../index.html" aria-label="AgendaFácil">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <span>Agenda<span class="brand-light">Fácil</span></span>
+        </a>
+    </header>
+    <main class="resultado-layout">
+        <section class="resultado-card" aria-labelledby="resultadoTitulo">
+            <div class="icone-confirmacao" aria-hidden="true"><span>✓</span></div>
+            <span class="eyebrow">AGENDAFÁCIL</span>
+            <h1 id="resultadoTitulo">Agendamento<br>confirmado!</h1>
+            <p class="descricao">Tudo certo! Seu agendamento foi confirmado com sucesso.</p>
+            <div class="protocolo">Protocolo <strong id="numeroProtocolo">—</strong></div>
+            <p class="orientacao">Guarde esse número para consultar seu agendamento posteriormente.</p>
+            <button class="button primary full" id="btnAgendamentos" type="button">Ver agendamentos</button>
+            <a class="voltar" href="../index.html">Voltar ao início</a>
+            <p id="mensagemAgendamentos" class="mensagem" role="status" hidden></p>
+        </section>
+    </main>
+    <script src="../js/resultado.js"></script>
+</body>
+</html>
